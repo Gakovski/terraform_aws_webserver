@@ -41,7 +41,6 @@ resource "aws_route_table" "CUSTOM_RT" {
 
   route {
       ipv6_cidr_block        = "::/0"
-      #PAZI OVDE MOZHE DA IMA ERROR (brisi egress_only_)
       gateway_id = aws_internet_gateway.CUSTOM_IGW.id 
     }
 
